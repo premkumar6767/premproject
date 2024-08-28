@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart FAQ Assistant</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+    <div class="chat-container">
+        <div id="chatbox">
+            <div class="bot-message">Hello! I'm your FAQ Assistant. How can I help you today?</div>
+        </div>
+        <input type="text" id="userInput" placeholder="Ask your question here..."
+            onkeydown="if (event.keyCode == 13) sendMessage()">
+        <button onclick=sendMessage()>Send</button>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>
